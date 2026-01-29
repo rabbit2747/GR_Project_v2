@@ -1,0 +1,460 @@
+# GR Project v2 Verification Report
+
+**Date:** 2026-01-29
+**Status:** PASS
+
+## 1. Summary
+- **Total Atoms**: 557
+- **Graph Edges**: 2240
+- **Orphan Nodes**: 0
+- **Broken Links**: 447
+
+## 2. Issues Found
+### 2.2 Broken Links (Invalid References)
+- `ATK-MITRE-T1041-001` tries to link to `ATK-MITRE-TA0010-001` via `is_a`, but `ATK-MITRE-TA0010-001` does not exist.
+- `ATK-MITRE-T1041-001` tries to link to `ATK-MITRE-T1560-001` via `related_to`, but `ATK-MITRE-T1560-001` does not exist.
+- `ATK-MITRE-T1048-001` tries to link to `ATK-MITRE-TA0010-001` via `is_a`, but `ATK-MITRE-TA0010-001` does not exist.
+- `ATK-MITRE-T1070-001` tries to link to `ATK-MITRE-TA0005-001` via `is_a`, but `ATK-MITRE-TA0005-001` does not exist.
+- `ATK-MITRE-T1078-001` tries to link to `ATK-MITRE-INITIAL-ACCESS-001` via `is_a`, but `ATK-MITRE-INITIAL-ACCESS-001` does not exist.
+- `ATK-MITRE-T1087-001` tries to link to `ATK-MITRE-TA0007-001` via `is_a`, but `ATK-MITRE-TA0007-001` does not exist.
+- `ATK-MITRE-T1098-001` tries to link to `ATK-MITRE-TA0003-001` via `is_a`, but `ATK-MITRE-TA0003-001` does not exist.
+- `ATK-MITRE-T1190-001` tries to link to `ATK-MITRE-TA0001-001` via `is_a`, but `ATK-MITRE-TA0001-001` does not exist.
+- `ATK-MITRE-T1486-001` tries to link to `ATK-MITRE-IMPACT-001` via `is_a`, but `ATK-MITRE-IMPACT-001` does not exist.
+- `ATK-MITRE-T1547-001` tries to link to `ATK-MITRE-TA0003-001` via `is_a`, but `ATK-MITRE-TA0003-001` does not exist.
+- `ATK-MITRE-T1547-001` tries to link to `ATK-MALWARE-PERSISTENCE-001` via `related_to`, but `ATK-MALWARE-PERSISTENCE-001` does not exist.
+- `ATK-MITRE-T1566-001` tries to link to `ATK-MITRE-INITIAL-ACCESS-001` via `is_a`, but `ATK-MITRE-INITIAL-ACCESS-001` does not exist.
+- `ATK-NET-ARP-SPOOFING-001` tries to link to `ATK-MITM-001` via `is_a`, but `ATK-MITM-001` does not exist.
+- `ATK-NET-ARP-SPOOFING-001` tries to link to `ATK-NET-DNS-SPOOFING-001` via `related_to`, but `ATK-NET-DNS-SPOOFING-001` does not exist.
+- `ATK-NET-DNS-TUNNELING-001` tries to link to `ATK-COVERT-CHANNEL-001` via `is_a`, but `ATK-COVERT-CHANNEL-001` does not exist.
+- `ATK-NET-VLAN-HOPPING-001` tries to link to `TECH-CONCEPT-NETWORK-SEGMENTATION-001` via `related_to`, but `TECH-CONCEPT-NETWORK-SEGMENTATION-001` does not exist.
+- `ATK-WIN-ASREP-001` tries to link to `TECH-PROTO-KERBEROS-001` via `related_to`, but `TECH-PROTO-KERBEROS-001` does not exist.
+- `ATK-WIN-KERBEROASTING-001` tries to link to `TECH-PROTO-KERBEROS-001` via `related_to`, but `TECH-PROTO-KERBEROS-001` does not exist.
+- `ATK-WIN-NTLM-RELAY-001` tries to link to `ATK-MITM-001` via `is_a`, but `ATK-MITM-001` does not exist.
+- `COMP-FRAMEWORK-GDPR-001` tries to link to `GR-SEC-COMPLIANCE-001` via `is_a`, but `GR-SEC-COMPLIANCE-001` does not exist.
+- `COMP-FRAMEWORK-GDPR-001` tries to link to `COMP-FRAMEWORK-CCPA-001` via `related_to`, but `COMP-FRAMEWORK-CCPA-001` does not exist.
+- `COMP-FRAMEWORK-HIPAA-001` tries to link to `GR-SEC-COMPLIANCE-001` via `is_a`, but `GR-SEC-COMPLIANCE-001` does not exist.
+- `COMP-FRAMEWORK-ISO27001-001` tries to link to `GR-SEC-COMPLIANCE-001` via `is_a`, but `GR-SEC-COMPLIANCE-001` does not exist.
+- `COMP-FRAMEWORK-NIST-001` tries to link to `GR-SEC-COMPLIANCE-001` via `is_a`, but `GR-SEC-COMPLIANCE-001` does not exist.
+- `COMP-FRAMEWORK-PCIDSS-001` tries to link to `GR-SEC-COMPLIANCE-001` via `is_a`, but `GR-SEC-COMPLIANCE-001` does not exist.
+- `COMP-FRAMEWORK-PCIDSS-001` tries to link to `DEF-CRYPTO-ENCRYPTION-001` via `related_to`, but `DEF-CRYPTO-ENCRYPTION-001` does not exist.
+- `COMP-FRAMEWORK-SOC2-001` tries to link to `GR-SEC-COMPLIANCE-001` via `is_a`, but `GR-SEC-COMPLIANCE-001` does not exist.
+- `COMP-GDPR-001` tries to link to `COMP-PIPA-001` via `related_to`, but `COMP-PIPA-001` does not exist.
+- `COMP-GDPR-001` tries to link to `TECH-CONCEPT-PRIVACY-001` via `related_to`, but `TECH-CONCEPT-PRIVACY-001` does not exist.
+- `COMP-HIPAA-001` tries to link to `COMP-HITECH-001` via `related_to`, but `COMP-HITECH-001` does not exist.
+- `COMP-ISO27001-001` tries to link to `COMP-STANDARD-001` via `is_a`, but `COMP-STANDARD-001` does not exist.
+- `COMP-ISO27001-001` tries to link to `COMP-ISO27002-001` via `related_to`, but `COMP-ISO27002-001` does not exist.
+- `COMP-NIST-CSF-001` tries to link to `COMP-NIST-800-53-001` via `related_to`, but `COMP-NIST-800-53-001` does not exist.
+- `COMP-PCIDSS-001` tries to link to `COMP-STANDARD-001` via `is_a`, but `COMP-STANDARD-001` does not exist.
+- `COMP-PCIDSS-001` tries to link to `TECH-CONCEPT-NETWORK-SECURITY-001` via `related_to`, but `TECH-CONCEPT-NETWORK-SECURITY-001` does not exist.
+- `COMP-SOC2-001` tries to link to `COMP-SOC1-001` via `related_to`, but `COMP-SOC1-001` does not exist.
+- `GR-SEC-COMP-001` tries to link to `COMP-REGULATION-001` via `has_children`, but `COMP-REGULATION-001` does not exist.
+- `GR-SEC-COMP-001` tries to link to `COMP-STANDARD-001` via `has_children`, but `COMP-STANDARD-001` does not exist.
+- `GR-SEC-CON-00001` tries to link to `GR-SEC-CON-00010` via `causes`, but `GR-SEC-CON-00010` does not exist.
+- `GR-SEC-CON-00001` tries to link to `GR-SEC-CON-00011` via `causes`, but `GR-SEC-CON-00011` does not exist.
+- `GR-SEC-CON-00001` tries to link to `GR-SEC-CON-00012` via `causes`, but `GR-SEC-CON-00012` does not exist.
+- `GR-SEC-CON-00002` tries to link to `GR-SEC-CON-00010` via `causes`, but `GR-SEC-CON-00010` does not exist.
+- `GR-SEC-CON-00002` tries to link to `GR-SEC-CON-00011` via `causes`, but `GR-SEC-CON-00011` does not exist.
+- `GR-SEC-CON-00002` tries to link to `GR-SEC-TEC-00050` via `enables`, but `GR-SEC-TEC-00050` does not exist.
+- `GR-SEC-CON-00002` tries to link to `GR-SEC-TEC-00051` via `enables`, but `GR-SEC-TEC-00051` does not exist.
+- `GR-SEC-CON-00002` tries to link to `GR-SEC-CMP-00001` via `requires`, but `GR-SEC-CMP-00001` does not exist.
+- `GR-SEC-CON-00002` tries to link to `GR-SEC-CMP-00002` via `requires`, but `GR-SEC-CMP-00002` does not exist.
+- `GR-SEC-CON-00002` tries to link to `GR-SEC-CMP-00010` via `applies_to`, but `GR-SEC-CMP-00010` does not exist.
+- `GR-SEC-CON-00002` tries to link to `GR-SEC-CMP-00011` via `applies_to`, but `GR-SEC-CMP-00011` does not exist.
+- `GR-SEC-CON-00002` tries to link to `GR-SEC-CMP-00012` via `applies_to`, but `GR-SEC-CMP-00012` does not exist.
+- `GR-SEC-CON-00002` tries to link to `GR-SEC-CMP-00013` via `applies_to`, but `GR-SEC-CMP-00013` does not exist.
+- `GR-SEC-INFRA-001` tries to link to `INFRA-CONTAINER-001` via `has_children`, but `INFRA-CONTAINER-001` does not exist.
+- `TECH-CONCEPT-ATTACK-SURFACE-001` tries to link to `TECH-CONCEPT-SECURITY-OPERATIONS-001` via `is_a`, but `TECH-CONCEPT-SECURITY-OPERATIONS-001` does not exist.
+- `TECH-CONCEPT-BAS-001` tries to link to `TECH-CONCEPT-SECURITY-TESTING-001` via `is_a`, but `TECH-CONCEPT-SECURITY-TESTING-001` does not exist.
+- `TECH-CONCEPT-DEFENSE-IN-DEPTH-001` tries to link to `TECH-CONCEPT-SECURITY-PRINCIPLE-001` via `is_a`, but `TECH-CONCEPT-SECURITY-PRINCIPLE-001` does not exist.
+- `TECH-CONCEPT-FORENSICS-001` tries to link to `TECH-CONCEPT-SECURITY-OPERATIONS-001` via `is_a`, but `TECH-CONCEPT-SECURITY-OPERATIONS-001` does not exist.
+- `TECH-CONCEPT-INCIDENT-RESPONSE-001` tries to link to `TECH-CONCEPT-SECURITY-OPERATIONS-001` via `is_a`, but `TECH-CONCEPT-SECURITY-OPERATIONS-001` does not exist.
+- `TECH-CONCEPT-LEAST-PRIVILEGE-001` tries to link to `TECH-CONCEPT-SECURITY-PRINCIPLE-001` via `is_a`, but `TECH-CONCEPT-SECURITY-PRINCIPLE-001` does not exist.
+- `TECH-CONCEPT-MITRE-ATTACK-001` tries to link to `ATK-*` via `provides_classification_for`, but `ATK-*` does not exist.
+- `TECH-CONCEPT-OSINT-001` tries to link to `ATK-MITRE-RECON-001` via `related_to`, but `ATK-MITRE-RECON-001` does not exist.
+- `TECH-CONCEPT-OSINT-001` tries to link to `DEF-INTEL-THREAT-001` via `related_to`, but `DEF-INTEL-THREAT-001` does not exist.
+- `TECH-CONCEPT-PURPLE-TEAM-001` tries to link to `TECH-CONCEPT-SECURITY-TEAM-001` via `is_a`, but `TECH-CONCEPT-SECURITY-TEAM-001` does not exist.
+- `TECH-CONCEPT-SOC-001` tries to link to `TECH-CONCEPT-SECURITY-OPERATIONS-001` via `is_a`, but `TECH-CONCEPT-SECURITY-OPERATIONS-001` does not exist.
+- `TECH-CONCEPT-SUPPLY-CHAIN-SECURITY-001` tries to link to `TECH-CONCEPT-RISK-MANAGEMENT-001` via `is_a`, but `TECH-CONCEPT-RISK-MANAGEMENT-001` does not exist.
+- `TECH-CONCEPT-SUPPLY-CHAIN-SECURITY-001` tries to link to `ATK-SUPPLY-CHAIN-001` via `related_to`, but `ATK-SUPPLY-CHAIN-001` does not exist.
+- `TECH-CONCEPT-THREAT-MODELING-001` tries to link to `TECH-CONCEPT-SECURITY-001` via `is_a`, but `TECH-CONCEPT-SECURITY-001` does not exist.
+- `TECH-CONCEPT-VULNERABILITY-MANAGEMENT-001` tries to link to `TECH-CONCEPT-SECURITY-OPERATIONS-001` via `is_a`, but `TECH-CONCEPT-SECURITY-OPERATIONS-001` does not exist.
+- `TECH-CONCEPT-VULNERABILITY-MANAGEMENT-001` tries to link to `TECH-CONCEPT-PATCH-MANAGEMENT-001` via `related_to`, but `TECH-CONCEPT-PATCH-MANAGEMENT-001` does not exist.
+- `TECH-CONCEPT-ZERO-TRUST-001` tries to link to `TECH-CONCEPT-SECURITY-ARCHITECTURE-001` via `is_a`, but `TECH-CONCEPT-SECURITY-ARCHITECTURE-001` does not exist.
+- `TECH-CONCEPT-ZERO-TRUST-001` tries to link to `DEF-NET-MICROSEGMENTATION-001` via `related_to`, but `DEF-NET-MICROSEGMENTATION-001` does not exist.
+- `ATK-IOT-001` tries to link to `ATK-IOT-PROTOCOL-001` via `has_children`, but `ATK-IOT-PROTOCOL-001` does not exist.
+- `ATK-IOT-001` tries to link to `MALWARE-BOTNET-001` via `related_to`, but `MALWARE-BOTNET-001` does not exist.
+- `ATK-MOBILE-001` tries to link to `ATK-MOBILE-MALWARE-001` via `has_children`, but `ATK-MOBILE-MALWARE-001` does not exist.
+- `ATK-MOBILE-001` tries to link to `ATK-MOBILE-REVERSING-001` via `has_children`, but `ATK-MOBILE-REVERSING-001` does not exist.
+- `ATK-MOBILE-001` tries to link to `DEF-MOBILE-001` via `related_to`, but `DEF-MOBILE-001` does not exist.
+- `ATK-MOBILE-001` tries to link to `VUL-MOBILE-001` via `related_to`, but `VUL-MOBILE-001` does not exist.
+- `ATK-PHISHING-001` tries to link to `ATK-PHISHING-SPEAR-001` via `has_children`, but `ATK-PHISHING-SPEAR-001` does not exist.
+- `ATK-PHISHING-001` tries to link to `ATK-PHISHING-WHALING-001` via `has_children`, but `ATK-PHISHING-WHALING-001` does not exist.
+- `ATK-PHISHING-001` tries to link to `ATK-PHISHING-SMISHING-001` via `has_children`, but `ATK-PHISHING-SMISHING-001` does not exist.
+- `ATK-SUPPLY-001` tries to link to `ATK-SUPPLY-TYPOSQUATTING-001` via `has_children`, but `ATK-SUPPLY-TYPOSQUATTING-001` does not exist.
+- `ATK-WEB-001` tries to link to `ATK-WEB-PROTOTYPE-POLLUTION-001` via `has_children`, but `ATK-WEB-PROTOTYPE-POLLUTION-001` does not exist.
+- `ATK-WIN-PRIV-ESC-001` tries to link to `ATK-WIN-TOKEN-MANIP-001` via `has_children`, but `ATK-WIN-TOKEN-MANIP-001` does not exist.
+- `ATK-WIN-PRIV-ESC-001` tries to link to `ATK-WIN-UAC-BYPASS-001` via `has_children`, but `ATK-WIN-UAC-BYPASS-001` does not exist.
+- `ATK-WIN-PRIV-ESC-001` tries to link to `ATK-WIN-SERVICE-ABUSE-001` via `has_children`, but `ATK-WIN-SERVICE-ABUSE-001` does not exist.
+- `ATK-WIN-PRIV-ESC-001` tries to link to `ATK-MITRE-T1134-001` via `related_to`, but `ATK-MITRE-T1134-001` does not exist.
+- `ATK-WIN-PRIV-ESC-001` tries to link to `VUL-WIN-001` via `related_to`, but `VUL-WIN-001` does not exist.
+- `COMP-AUDIT-001` tries to link to `COMP-AUDIT-INTERNAL-001` via `has_children`, but `COMP-AUDIT-INTERNAL-001` does not exist.
+- `COMP-AUDIT-001` tries to link to `COMP-AUDIT-EXTERNAL-001` via `has_children`, but `COMP-AUDIT-EXTERNAL-001` does not exist.
+- `COMP-AUDIT-001` tries to link to `DEF-AUDIT-001` via `related_to`, but `DEF-AUDIT-001` does not exist.
+- `COMP-FRAMEWORK-001` tries to link to `COMP-FRAMEWORK-CIS-001` via `has_children`, but `COMP-FRAMEWORK-CIS-001` does not exist.
+- `COMP-FRAMEWORK-001` tries to link to `DEF-GOVERNANCE-001` via `related_to`, but `DEF-GOVERNANCE-001` does not exist.
+- `COMP-FRAMEWORK-001` tries to link to `GR-SEC-PRI-001` via `related_to`, but `GR-SEC-PRI-001` does not exist.
+- `COMP-GOVERNANCE-001` tries to link to `COMP-GOV-POLICY-001` via `has_children`, but `COMP-GOV-POLICY-001` does not exist.
+- `COMP-GOVERNANCE-001` tries to link to `COMP-GOV-RISK-001` via `has_children`, but `COMP-GOV-RISK-001` does not exist.
+- `COMP-GOVERNANCE-001` tries to link to `GR-SEC-PRI-001` via `related_to`, but `GR-SEC-PRI-001` does not exist.
+- `COMP-INDUSTRY-001` tries to link to `COMP-INDUSTRY-PCI-001` via `has_children`, but `COMP-INDUSTRY-PCI-001` does not exist.
+- `COMP-INDUSTRY-001` tries to link to `COMP-INDUSTRY-HIPAA-001` via `has_children`, but `COMP-INDUSTRY-HIPAA-001` does not exist.
+- `COMP-INDUSTRY-001` tries to link to `COMP-INDUSTRY-SOX-001` via `has_children`, but `COMP-INDUSTRY-SOX-001` does not exist.
+- `COMP-INDUSTRY-001` tries to link to `DEF-AUDIT-001` via `related_to`, but `DEF-AUDIT-001` does not exist.
+- `COMP-PRIVACY-001` tries to link to `COMP-PRIVACY-GDPR-001` via `has_children`, but `COMP-PRIVACY-GDPR-001` does not exist.
+- `COMP-PRIVACY-001` tries to link to `COMP-PRIVACY-CCPA-001` via `has_children`, but `COMP-PRIVACY-CCPA-001` does not exist.
+- `COMP-PRIVACY-001` tries to link to `COMP-PRIVACY-PIPA-001` via `has_children`, but `COMP-PRIVACY-PIPA-001` does not exist.
+- `INFRA-AD-001` tries to link to `INFRA-AD-DC-001` via `has_children`, but `INFRA-AD-DC-001` does not exist.
+- `INFRA-AD-001` tries to link to `INFRA-AD-FOREST-001` via `has_children`, but `INFRA-AD-FOREST-001` does not exist.
+- `INFRA-DATACENTER-001` tries to link to `INFRA-DC-PHYSICAL-001` via `has_children`, but `INFRA-DC-PHYSICAL-001` does not exist.
+- `INFRA-DATACENTER-001` tries to link to `INFRA-DC-POWER-001` via `has_children`, but `INFRA-DC-POWER-001` does not exist.
+- `INFRA-DATACENTER-001` tries to link to `INFRA-DC-COOLING-001` via `has_children`, but `INFRA-DC-COOLING-001` does not exist.
+- `INFRA-DATACENTER-001` tries to link to `DEF-PHYSICAL-001` via `related_to`, but `DEF-PHYSICAL-001` does not exist.
+- `INFRA-DATACENTER-001` tries to link to `COMP-BCDR-001` via `related_to`, but `COMP-BCDR-001` does not exist.
+- `INFRA-ENDPOINT-001` tries to link to `INFRA-ENDPOINT-WORKSTATION-001` via `has_children`, but `INFRA-ENDPOINT-WORKSTATION-001` does not exist.
+- `INFRA-ENDPOINT-001` tries to link to `INFRA-ENDPOINT-MOBILE-001` via `has_children`, but `INFRA-ENDPOINT-MOBILE-001` does not exist.
+- `INFRA-ENDPOINT-001` tries to link to `DEF-EDR-001` via `related_to`, but `DEF-EDR-001` does not exist.
+- `INFRA-HYBRID-001` tries to link to `INFRA-HYBRID-CONNECTIVITY-001` via `has_children`, but `INFRA-HYBRID-CONNECTIVITY-001` does not exist.
+- `INFRA-HYBRID-001` tries to link to `INFRA-HYBRID-MULTICLOUD-001` via `has_children`, but `INFRA-HYBRID-MULTICLOUD-001` does not exist.
+- `INFRA-IDENTITY-001` tries to link to `INFRA-IDENTITY-IDP-001` via `has_children`, but `INFRA-IDENTITY-IDP-001` does not exist.
+- `INFRA-IDENTITY-001` tries to link to `INFRA-IDENTITY-DIRECTORY-001` via `has_children`, but `INFRA-IDENTITY-DIRECTORY-001` does not exist.
+- `INFRA-IOT-001` tries to link to `INFRA-IOT-CONSUMER-001` via `has_children`, but `INFRA-IOT-CONSUMER-001` does not exist.
+- `INFRA-IOT-001` tries to link to `INFRA-IOT-INDUSTRIAL-001` via `has_children`, but `INFRA-IOT-INDUSTRIAL-001` does not exist.
+- `INFRA-IOT-001` tries to link to `DEF-IOT-SEC-001` via `related_to`, but `DEF-IOT-SEC-001` does not exist.
+- `INFRA-NETWORK-001` tries to link to `INFRA-NET-LAN-001` via `has_children`, but `INFRA-NET-LAN-001` does not exist.
+- `INFRA-NETWORK-001` tries to link to `INFRA-NET-WAN-001` via `has_children`, but `INFRA-NET-WAN-001` does not exist.
+- `INFRA-NETWORK-001` tries to link to `INFRA-NET-DMZ-001` via `has_children`, but `INFRA-NET-DMZ-001` does not exist.
+- `INFRA-OT-001` tries to link to `INFRA-OT-SCADA-001` via `has_children`, but `INFRA-OT-SCADA-001` does not exist.
+- `INFRA-OT-001` tries to link to `INFRA-OT-ICS-001` via `has_children`, but `INFRA-OT-ICS-001` does not exist.
+- `INFRA-OT-001` tries to link to `INFRA-OT-PLC-001` via `has_children`, but `INFRA-OT-PLC-001` does not exist.
+- `INFRA-OT-001` tries to link to `COMP-ICS-CERT-001` via `related_to`, but `COMP-ICS-CERT-001` does not exist.
+- `INFRA-SECURITY-001` tries to link to `INFRA-SEC-FIREWALL-001` via `has_children`, but `INFRA-SEC-FIREWALL-001` does not exist.
+- `INFRA-SECURITY-001` tries to link to `INFRA-SEC-IDS-001` via `has_children`, but `INFRA-SEC-IDS-001` does not exist.
+- `INFRA-SECURITY-001` tries to link to `INFRA-SEC-SIEM-001` via `has_children`, but `INFRA-SEC-SIEM-001` does not exist.
+- `INFRA-SERVER-001` tries to link to `INFRA-SERVER-PHYSICAL-001` via `has_children`, but `INFRA-SERVER-PHYSICAL-001` does not exist.
+- `INFRA-SERVER-001` tries to link to `INFRA-SERVER-VIRTUAL-001` via `has_children`, but `INFRA-SERVER-VIRTUAL-001` does not exist.
+- `INFRA-SERVER-001` tries to link to `DEF-HARDENING-001` via `related_to`, but `DEF-HARDENING-001` does not exist.
+- `INFRA-STORAGE-001` tries to link to `INFRA-STORAGE-SAN-001` via `has_children`, but `INFRA-STORAGE-SAN-001` does not exist.
+- `INFRA-STORAGE-001` tries to link to `INFRA-STORAGE-NAS-001` via `has_children`, but `INFRA-STORAGE-NAS-001` does not exist.
+- `INFRA-STORAGE-001` tries to link to `INFRA-STORAGE-OBJECT-001` via `has_children`, but `INFRA-STORAGE-OBJECT-001` does not exist.
+- `TECH-API-001` tries to link to `TECH-API-REST-001` via `has_children`, but `TECH-API-REST-001` does not exist.
+- `TECH-API-001` tries to link to `TECH-API-GRAPHQL-001` via `has_children`, but `TECH-API-GRAPHQL-001` does not exist.
+- `TECH-API-001` tries to link to `TECH-API-GRPC-001` via `has_children`, but `TECH-API-GRPC-001` does not exist.
+- `TECH-API-001` tries to link to `DEF-API-GATEWAY-001` via `related_to`, but `DEF-API-GATEWAY-001` does not exist.
+- `TECH-AUTH-001` tries to link to `TECH-AUTH-KERBEROS-001` via `has_children`, but `TECH-AUTH-KERBEROS-001` does not exist.
+- `TECH-AUTH-001` tries to link to `TECH-AUTH-OAUTH-001` via `has_children`, but `TECH-AUTH-OAUTH-001` does not exist.
+- `TECH-AUTH-001` tries to link to `TECH-AUTH-SAML-001` via `has_children`, but `TECH-AUTH-SAML-001` does not exist.
+- `TECH-AUTH-001` tries to link to `DEF-MFA-001` via `related_to`, but `DEF-MFA-001` does not exist.
+- `TECH-BACKUP-001` tries to link to `TECH-BACKUP-FULL-001` via `has_children`, but `TECH-BACKUP-FULL-001` does not exist.
+- `TECH-BACKUP-001` tries to link to `TECH-BACKUP-INCREMENTAL-001` via `has_children`, but `TECH-BACKUP-INCREMENTAL-001` does not exist.
+- `TECH-BACKUP-001` tries to link to `DEF-RECOVERY-001` via `related_to`, but `DEF-RECOVERY-001` does not exist.
+- `TECH-BACKUP-001` tries to link to `COMP-BCDR-001` via `related_to`, but `COMP-BCDR-001` does not exist.
+- `TECH-CI-CD-001` tries to link to `TECH-CI-JENKINS-001` via `has_children`, but `TECH-CI-JENKINS-001` does not exist.
+- `TECH-CI-CD-001` tries to link to `TECH-CI-GITHUB-ACTIONS-001` via `has_children`, but `TECH-CI-GITHUB-ACTIONS-001` does not exist.
+- `TECH-CONTAINER-001` tries to link to `TECH-CONTAINER-DOCKER-001` via `has_children`, but `TECH-CONTAINER-DOCKER-001` does not exist.
+- `TECH-CONTAINER-001` tries to link to `TECH-CONTAINER-K8S-001` via `has_children`, but `TECH-CONTAINER-K8S-001` does not exist.
+- `TECH-CONTAINER-001` tries to link to `DEF-CONTAINER-SEC-001` via `related_to`, but `DEF-CONTAINER-SEC-001` does not exist.
+- `TECH-DATABASE-001` tries to link to `TECH-DB-SQL-001` via `has_children`, but `TECH-DB-SQL-001` does not exist.
+- `TECH-DATABASE-001` tries to link to `TECH-DB-NOSQL-001` via `has_children`, but `TECH-DB-NOSQL-001` does not exist.
+- `TECH-DATABASE-001` tries to link to `DEF-DB-SEC-001` via `related_to`, but `DEF-DB-SEC-001` does not exist.
+- `TECH-ENCRYPTION-001` tries to link to `TECH-CRYPTO-AES-001` via `has_children`, but `TECH-CRYPTO-AES-001` does not exist.
+- `TECH-ENCRYPTION-001` tries to link to `TECH-CRYPTO-RSA-001` via `has_children`, but `TECH-CRYPTO-RSA-001` does not exist.
+- `TECH-ENCRYPTION-001` tries to link to `TECH-CRYPTO-HASH-001` via `has_children`, but `TECH-CRYPTO-HASH-001` does not exist.
+- `TECH-IAM-001` tries to link to `TECH-IAM-RBAC-001` via `has_children`, but `TECH-IAM-RBAC-001` does not exist.
+- `TECH-IAM-001` tries to link to `TECH-IAM-SSO-001` via `has_children`, but `TECH-IAM-SSO-001` does not exist.
+- `TECH-IAM-001` tries to link to `TECH-IAM-PAM-001` via `has_children`, but `TECH-IAM-PAM-001` does not exist.
+- `TECH-IAM-001` tries to link to `DEF-RBAC-001` via `related_to`, but `DEF-RBAC-001` does not exist.
+- `TECH-LOGGING-001` tries to link to `TECH-LOG-SIEM-001` via `has_children`, but `TECH-LOG-SIEM-001` does not exist.
+- `TECH-LOGGING-001` tries to link to `TECH-LOG-ELK-001` via `has_children`, but `TECH-LOG-ELK-001` does not exist.
+- `TECH-NETWORK-001` tries to link to `TECH-NET-ROUTING-001` via `has_children`, but `TECH-NET-ROUTING-001` does not exist.
+- `TECH-NETWORK-001` tries to link to `TECH-NET-SWITCHING-001` via `has_children`, but `TECH-NET-SWITCHING-001` does not exist.
+- `TECH-NETWORK-001` tries to link to `TECH-NET-SDN-001` via `has_children`, but `TECH-NET-SDN-001` does not exist.
+- `TECH-OS-001` tries to link to `TECH-OS-WINDOWS-001` via `has_children`, but `TECH-OS-WINDOWS-001` does not exist.
+- `TECH-OS-001` tries to link to `TECH-OS-LINUX-001` via `has_children`, but `TECH-OS-LINUX-001` does not exist.
+- `TECH-OS-001` tries to link to `TECH-OS-MACOS-001` via `has_children`, but `TECH-OS-MACOS-001` does not exist.
+- `TECH-OS-001` tries to link to `DEF-HARDENING-001` via `related_to`, but `DEF-HARDENING-001` does not exist.
+- `TECH-PKI-001` tries to link to `TECH-PKI-CA-001` via `has_children`, but `TECH-PKI-CA-001` does not exist.
+- `TECH-PKI-001` tries to link to `TECH-PKI-CERT-001` via `has_children`, but `TECH-PKI-CERT-001` does not exist.
+- `TECH-VIRTUALIZATION-001` tries to link to `TECH-VIRT-HYPERVISOR-001` via `has_children`, but `TECH-VIRT-HYPERVISOR-001` does not exist.
+- `TECH-VIRTUALIZATION-001` tries to link to `TECH-VIRT-VM-001` via `has_children`, but `TECH-VIRT-VM-001` does not exist.
+- `TECH-WEB-001` tries to link to `TECH-WEB-FRONTEND-001` via `has_children`, but `TECH-WEB-FRONTEND-001` does not exist.
+- `TECH-WEB-001` tries to link to `TECH-WEB-BACKEND-001` via `has_children`, but `TECH-WEB-BACKEND-001` does not exist.
+- `TECH-WEB-001` tries to link to `TECH-WEB-API-001` via `has_children`, but `TECH-WEB-API-001` does not exist.
+- `TOOL-CLOUD-001` tries to link to `TOOL-CLOUD-SCOUTSUITE-001` via `has_children`, but `TOOL-CLOUD-SCOUTSUITE-001` does not exist.
+- `VUL-ACCESS-CONTROL-001` tries to link to `VUL-IDOR-001` via `has_children`, but `VUL-IDOR-001` does not exist.
+- `VUL-ACCESS-CONTROL-001` tries to link to `VUL-PRIVILEGE-ESCALATION-001` via `has_children`, but `VUL-PRIVILEGE-ESCALATION-001` does not exist.
+- `VUL-ACCESS-CONTROL-001` tries to link to `DEF-RBAC-001` via `related_to`, but `DEF-RBAC-001` does not exist.
+- `VUL-API-001` tries to link to `VUL-API-RATE-LIMIT-001` via `has_children`, but `VUL-API-RATE-LIMIT-001` does not exist.
+- `VUL-API-001` tries to link to `DEF-API-GATEWAY-001` via `related_to`, but `DEF-API-GATEWAY-001` does not exist.
+- `VUL-AUTH-001` tries to link to `VUL-AUTH-BYPASS-001` via `has_children`, but `VUL-AUTH-BYPASS-001` does not exist.
+- `VUL-AUTH-001` tries to link to `DEF-MFA-001` via `related_to`, but `DEF-MFA-001` does not exist.
+- `VUL-CLOUD-001` tries to link to `VUL-CLOUD-STORAGE-001` via `has_children`, but `VUL-CLOUD-STORAGE-001` does not exist.
+- `VUL-CONFIG-001` tries to link to `VUL-CONFIG-DEFAULT-001` via `has_children`, but `VUL-CONFIG-DEFAULT-001` does not exist.
+- `VUL-CONFIG-001` tries to link to `VUL-CONFIG-EXPOSED-001` via `has_children`, but `VUL-CONFIG-EXPOSED-001` does not exist.
+- `VUL-CONFIG-001` tries to link to `DEF-HARDENING-001` via `related_to`, but `DEF-HARDENING-001` does not exist.
+- `VUL-CONFIG-001` tries to link to `COMP-CIS-001` via `related_to`, but `COMP-CIS-001` does not exist.
+- `VUL-CRYPTO-001` tries to link to `VUL-CRYPTO-WEAK-CIPHER-001` via `has_children`, but `VUL-CRYPTO-WEAK-CIPHER-001` does not exist.
+- `VUL-CRYPTO-001` tries to link to `VUL-CRYPTO-KEY-MGMT-001` via `has_children`, but `VUL-CRYPTO-KEY-MGMT-001` does not exist.
+- `VUL-INJECTION-001` tries to link to `VUL-SQLI-001` via `has_children`, but `VUL-SQLI-001` does not exist.
+- `VUL-INJECTION-001` tries to link to `VUL-COMMAND-INJECTION-001` via `has_children`, but `VUL-COMMAND-INJECTION-001` does not exist.
+- `VUL-INJECTION-001` tries to link to `VUL-LDAP-INJECTION-001` via `has_children`, but `VUL-LDAP-INJECTION-001` does not exist.
+- `VUL-INJECTION-001` tries to link to `DEF-INPUT-VALIDATION-001` via `related_to`, but `DEF-INPUT-VALIDATION-001` does not exist.
+- `VUL-LOGIC-001` tries to link to `VUL-LOGIC-RACE-001` via `has_children`, but `VUL-LOGIC-RACE-001` does not exist.
+- `VUL-LOGIC-001` tries to link to `VUL-LOGIC-WORKFLOW-001` via `has_children`, but `VUL-LOGIC-WORKFLOW-001` does not exist.
+- `VUL-LOGIC-001` tries to link to `DEF-INPUT-VALIDATION-001` via `related_to`, but `DEF-INPUT-VALIDATION-001` does not exist.
+- `VUL-MEMORY-001` tries to link to `VUL-BUFFER-OVERFLOW-001` via `has_children`, but `VUL-BUFFER-OVERFLOW-001` does not exist.
+- `VUL-MEMORY-001` tries to link to `VUL-USE-AFTER-FREE-001` via `has_children`, but `VUL-USE-AFTER-FREE-001` does not exist.
+- `VUL-MEMORY-001` tries to link to `VUL-HEAP-OVERFLOW-001` via `has_children`, but `VUL-HEAP-OVERFLOW-001` does not exist.
+- `VUL-MEMORY-001` tries to link to `DEF-ASLR-001` via `related_to`, but `DEF-ASLR-001` does not exist.
+- `DEF-AUTH-MFA-001` tries to link to `ATK-AUTH-PHISHING-001` via `related_to`, but `ATK-AUTH-PHISHING-001` does not exist.
+- `DEF-AUTH-SSO-001` tries to link to `TECH-CONCEPT-IAM-001` via `related_to`, but `TECH-CONCEPT-IAM-001` does not exist.
+- `DEF-AWARENESS-001` tries to link to `DEF-HUMAN-001` via `is_a`, but `DEF-HUMAN-001` does not exist.
+- `DEF-BACKUP-001` tries to link to `DEF-RECOVER-001` via `is_a`, but `DEF-RECOVER-001` does not exist.
+- `DEF-BACKUP-001` tries to link to `TECH-CONCEPT-BCP-001` via `related_to`, but `TECH-CONCEPT-BCP-001` does not exist.
+- `DEF-CRYPTO-PKI-001` tries to link to `DEF-CRYPTO-001` via `is_a`, but `DEF-CRYPTO-001` does not exist.
+- `DEF-CRYPTO-PKI-001` tries to link to `TECH-CONCEPT-CRYPTO-001` via `related_to`, but `TECH-CONCEPT-CRYPTO-001` does not exist.
+- `DEF-CRYPTO-TLS-001` tries to link to `DEF-CRYPTO-001` via `is_a`, but `DEF-CRYPTO-001` does not exist.
+- `DEF-DECEPTION-001` tries to link to `DEF-DETECTION-001` via `is_a`, but `DEF-DETECTION-001` does not exist.
+- `DEF-DLP-001` tries to link to `DEF-DATA-PROTECTION-001` via `is_a`, but `DEF-DATA-PROTECTION-001` does not exist.
+- `DEF-DLP-001` tries to link to `DEF-ENCRYPTION-001` via `related_to`, but `DEF-ENCRYPTION-001` does not exist.
+- `DEF-ENDPOINT-EDR-001` tries to link to `DEF-ENDPOINT-AV-001` via `related_to`, but `DEF-ENDPOINT-AV-001` does not exist.
+- `DEF-IAM-001` tries to link to `DEF-ACCESS-CONTROL-001` via `is_a`, but `DEF-ACCESS-CONTROL-001` does not exist.
+- `DEF-NET-FIREWALL-001` tries to link to `DEF-ARCH-ZERO-TRUST-001` via `related_to`, but `DEF-ARCH-ZERO-TRUST-001` does not exist.
+- `DEF-NET-IDS-001` tries to link to `DEF-NET-IPS-001` via `related_to`, but `DEF-NET-IPS-001` does not exist.
+- `DEF-NET-IDS-001` tries to link to `TOOL-DETECT-SIEM-001` via `related_to`, but `TOOL-DETECT-SIEM-001` does not exist.
+- `DEF-NET-SEGMENTATION-001` tries to link to `DEF-ARCHITECTURE-001` via `is_a`, but `DEF-ARCHITECTURE-001` does not exist.
+- `DEF-PATCH-MANAGEMENT-001` tries to link to `DEF-OPERATIONS-001` via `is_a`, but `DEF-OPERATIONS-001` does not exist.
+- `DEF-SOAR-001` tries to link to `DEF-AUTOMATION-001` via `is_a`, but `DEF-AUTOMATION-001` does not exist.
+- `DEF-WAF-001` tries to link to `DEF-WEB-001` via `is_a`, but `DEF-WEB-001` does not exist.
+- `INFRA-APP-API-001` tries to link to `INFRA-APP-WAS-001` via `is_a`, but `INFRA-APP-WAS-001` does not exist.
+- `INFRA-APP-WAS-JBOSS-001` tries to link to `INFRA-APP-WAS-001` via `is_a`, but `INFRA-APP-WAS-001` does not exist.
+- `INFRA-APP-WAS-TOMCAT-001` tries to link to `INFRA-APP-WAS-001` via `is_a`, but `INFRA-APP-WAS-001` does not exist.
+- `INFRA-APP-WAS-WEBLOGIC-001` tries to link to `INFRA-APP-WAS-001` via `is_a`, but `INFRA-APP-WAS-001` does not exist.
+- `INFRA-APP-WAS-WEBSPHERE-001` tries to link to `INFRA-APP-WAS-001` via `is_a`, but `INFRA-APP-WAS-001` does not exist.
+- `INFRA-APP-WEBAPP-001` tries to link to `INFRA-APP-WAS-001` via `requires`, but `INFRA-APP-WAS-001` does not exist.
+- `INFRA-APP-WEBSERVER-001` tries to link to `INFRA-APP-WAS-001` via `enables`, but `INFRA-APP-WAS-001` does not exist.
+- `INFRA-CLOUD-IAM-001` tries to link to `INFRA-CLOUD-AWS-001` via `related_to`, but `INFRA-CLOUD-AWS-001` does not exist.
+- `INFRA-CLOUD-IAM-001` tries to link to `DEF-ARCH-ZERO-TRUST-001` via `related_to`, but `DEF-ARCH-ZERO-TRUST-001` does not exist.
+- `INFRA-COMPUTE-VM-001` tries to link to `INFRA-APP-WAS-001` via `supports`, but `INFRA-APP-WAS-001` does not exist.
+- `INFRA-DATA-MQ-001` tries to link to `INFRA-APP-WAS-001` via `supports`, but `INFRA-APP-WAS-001` does not exist.
+- `INFRA-DNS-001` tries to link to `ATK-NET-DNS-SPOOFING-001` via `related_to`, but `ATK-NET-DNS-SPOOFING-001` does not exist.
+- `INFRA-DNS-001` tries to link to `DEF-NET-DNSSEC-001` via `related_to`, but `DEF-NET-DNSSEC-001` does not exist.
+- `INFRA-IAM-LDAP-001` tries to link to `INFRA-APP-WAS-001` via `supports`, but `INFRA-APP-WAS-001` does not exist.
+- `INFRA-KERBEROS-001` tries to link to `INFRA-PROTOCOL-001` via `is_a`, but `INFRA-PROTOCOL-001` does not exist.
+- `INFRA-LDAP-001` tries to link to `INFRA-PROTOCOL-001` via `is_a`, but `INFRA-PROTOCOL-001` does not exist.
+- `INFRA-LDAP-001` tries to link to `ATK-LDAP-INJECTION-001` via `related_to`, but `ATK-LDAP-INJECTION-001` does not exist.
+- `INFRA-NETWORK-VPN-001` tries to link to `DEF-ARCH-ZERO-TRUST-001` via `related_to`, but `DEF-ARCH-ZERO-TRUST-001` does not exist.
+- `INFRA-NETWORK-VPN-001` tries to link to `TECH-PROTO-IPSEC-001` via `related_to`, but `TECH-PROTO-IPSEC-001` does not exist.
+- `INFRA-RUNTIME-JVM-001` tries to link to `INFRA-APP-WAS-001` via `supports`, but `INFRA-APP-WAS-001` does not exist.
+- `INFRA-SERVERLESS-001` tries to link to `INFRA-CLOUD-COMPUTE-001` via `is_a`, but `INFRA-CLOUD-COMPUTE-001` does not exist.
+- `INFRA-SERVERLESS-001` tries to link to `INFRA-CLOUD-AWS-001` via `related_to`, but `INFRA-CLOUD-AWS-001` does not exist.
+- `INFRA-SERVICE-MESH-001` tries to link to `TECH-CONCEPT-NETWORK-001` via `is_a`, but `TECH-CONCEPT-NETWORK-001` does not exist.
+- `INFRA-SERVICE-MESH-001` tries to link to `DEF-ARCH-ZERO-TRUST-001` via `related_to`, but `DEF-ARCH-ZERO-TRUST-001` does not exist.
+- `INFRA-SYS-SERVER-001` tries to link to `INFRA-APP-WAS-001` via `runs`, but `INFRA-APP-WAS-001` does not exist.
+- `ATK-API-INJECTION-001` tries to link to `ATK-WEB-NOSQL-001` via `related_to`, but `ATK-WEB-NOSQL-001` does not exist.
+- `ATK-SESSION-FIXATION-001` tries to link to `DEF-PREVENT-SESSION-REGEN-001` via `mitigated_by`, but `DEF-PREVENT-SESSION-REGEN-001` does not exist.
+- `ATK-CLOUD-METADATA-001` tries to link to `INFRA-CLOUD-AWS-001` via `related_to`, but `INFRA-CLOUD-AWS-001` does not exist.
+- `ATK-CLOUD-STORAGE-001` tries to link to `INFRA-CLOUD-AWS-001` via `related_to`, but `INFRA-CLOUD-AWS-001` does not exist.
+- `ATK-CLOUD-STORAGE-001` tries to link to `ATK-MITRE-EXFIL-001` via `related_to`, but `ATK-MITRE-EXFIL-001` does not exist.
+- `ATK-CRYPTO-PADDING-ORACLE-001` tries to link to `DEF-CRYPTO-ENCRYPTION-001` via `related_to`, but `DEF-CRYPTO-ENCRYPTION-001` does not exist.
+- `ATK-CRYPTO-WEAK-001` tries to link to `DEF-PREVENT-CRYPTO-001` via `mitigated_by`, but `DEF-PREVENT-CRYPTO-001` does not exist.
+- `ATK-INJECT-CMD-001` tries to link to `ATK-POST-BACKDOOR-001` via `causes`, but `ATK-POST-BACKDOOR-001` does not exist.
+- `ATK-INJECT-CMD-001` tries to link to `ATK-POST-LATERAL-001` via `enables`, but `ATK-POST-LATERAL-001` does not exist.
+- `GR-SEC-INS-F0001` tries to link to `GR-SEC-CMP-00010` via `instance_of`, but `GR-SEC-CMP-00010` does not exist.
+- `GR-SEC-INS-F0002` tries to link to `GR-SEC-CMP-00012` via `instance_of`, but `GR-SEC-CMP-00012` does not exist.
+- `GR-SEC-INS-F0003` tries to link to `GR-SEC-CMP-00011` via `instance_of`, but `GR-SEC-CMP-00011` does not exist.
+- `GR-SEC-INS-P0002` tries to link to `GR-SEC-INS-P0010` via `followed_by`, but `GR-SEC-INS-P0010` does not exist.
+- `GR-SEC-TEC-00001` tries to link to `GR-SEC-CON-00020` via `requires`, but `GR-SEC-CON-00020` does not exist.
+- `GR-SEC-TEC-00001` tries to link to `GR-SEC-CTL-00010` via `conflicts_with`, but `GR-SEC-CTL-00010` does not exist.
+- `GR-SEC-TEC-00001` tries to link to `GR-SEC-CMP-00010` via `applies_to`, but `GR-SEC-CMP-00010` does not exist.
+- `GR-SEC-TEC-00001` tries to link to `GR-SEC-CMP-00011` via `applies_to`, but `GR-SEC-CMP-00011` does not exist.
+- `GR-SEC-TEC-00001` tries to link to `GR-SEC-CMP-00012` via `applies_to`, but `GR-SEC-CMP-00012` does not exist.
+- `GR-SEC-TEC-00001` tries to link to `GR-SEC-CMP-00013` via `applies_to`, but `GR-SEC-CMP-00013` does not exist.
+- `GR-SEC-TEC-00002` tries to link to `GR-SEC-CON-00021` via `requires`, but `GR-SEC-CON-00021` does not exist.
+- `GR-SEC-TEC-00002` tries to link to `GR-SEC-CMP-00010` via `applies_to`, but `GR-SEC-CMP-00010` does not exist.
+- `GR-SEC-TEC-00002` tries to link to `GR-SEC-CMP-00011` via `applies_to`, but `GR-SEC-CMP-00011` does not exist.
+- `GR-SEC-TEC-00002` tries to link to `GR-SEC-CMP-00012` via `applies_to`, but `GR-SEC-CMP-00012` does not exist.
+- `GR-SEC-TEC-00002` tries to link to `GR-SEC-CMP-00013` via `applies_to`, but `GR-SEC-CMP-00013` does not exist.
+- `GR-SEC-TEC-00003` tries to link to `GR-SEC-CMP-00010` via `applies_to`, but `GR-SEC-CMP-00010` does not exist.
+- `GR-SEC-TEC-00003` tries to link to `GR-SEC-CMP-00011` via `applies_to`, but `GR-SEC-CMP-00011` does not exist.
+- `GR-SEC-TEC-00003` tries to link to `GR-SEC-CMP-00012` via `applies_to`, but `GR-SEC-CMP-00012` does not exist.
+- `GR-SEC-TEC-00003` tries to link to `GR-SEC-CMP-00013` via `applies_to`, but `GR-SEC-CMP-00013` does not exist.
+- `GR-SEC-TEC-00004` tries to link to `GR-SEC-CON-00022` via `requires`, but `GR-SEC-CON-00022` does not exist.
+- `GR-SEC-TEC-00004` tries to link to `GR-SEC-CMP-00010` via `applies_to`, but `GR-SEC-CMP-00010` does not exist.
+- `GR-SEC-TEC-00004` tries to link to `GR-SEC-CMP-00011` via `applies_to`, but `GR-SEC-CMP-00011` does not exist.
+- `GR-SEC-TEC-00004` tries to link to `GR-SEC-CMP-00012` via `applies_to`, but `GR-SEC-CMP-00012` does not exist.
+- `GR-SEC-TEC-00004` tries to link to `GR-SEC-CMP-00013` via `applies_to`, but `GR-SEC-CMP-00013` does not exist.
+- `GR-SEC-TEC-00005` tries to link to `GR-SEC-CON-00023` via `requires`, but `GR-SEC-CON-00023` does not exist.
+- `GR-SEC-TEC-00005` tries to link to `GR-SEC-CTL-00011` via `conflicts_with`, but `GR-SEC-CTL-00011` does not exist.
+- `GR-SEC-TEC-00005` tries to link to `GR-SEC-CMP-00012` via `applies_to`, but `GR-SEC-CMP-00012` does not exist.
+- `GR-SEC-TEC-00005` tries to link to `GR-SEC-CMP-00011` via `applies_to`, but `GR-SEC-CMP-00011` does not exist.
+- `GR-SEC-TEC-00005` tries to link to `GR-SEC-CMP-00010` via `limited_support`, but `GR-SEC-CMP-00010` does not exist.
+- `GR-SEC-TEC-00005` tries to link to `GR-SEC-CMP-00013` via `not_applicable`, but `GR-SEC-CMP-00013` does not exist.
+- `GR-SEC-TEC-00006` tries to link to `GR-SEC-CON-00024` via `requires`, but `GR-SEC-CON-00024` does not exist.
+- `GR-SEC-TEC-00006` tries to link to `GR-SEC-CMP-00012` via `applies_to`, but `GR-SEC-CMP-00012` does not exist.
+- `GR-SEC-TEC-00006` tries to link to `GR-SEC-CMP-00013` via `applies_to`, but `GR-SEC-CMP-00013` does not exist.
+- `GR-SEC-TEC-00006` tries to link to `GR-SEC-CMP-00011` via `limited_support`, but `GR-SEC-CMP-00011` does not exist.
+- `GR-SEC-TEC-00006` tries to link to `GR-SEC-CMP-00010` via `limited_support`, but `GR-SEC-CMP-00010` does not exist.
+- `GR-SEC-TEC-00007` tries to link to `GR-SEC-CON-00025` via `requires`, but `GR-SEC-CON-00025` does not exist.
+- `GR-SEC-TEC-00007` tries to link to `GR-SEC-CON-00026` via `requires`, but `GR-SEC-CON-00026` does not exist.
+- `GR-SEC-TEC-00007` tries to link to `GR-SEC-CMP-00010` via `applies_to`, but `GR-SEC-CMP-00010` does not exist.
+- `GR-SEC-TEC-00007` tries to link to `GR-SEC-CMP-00011` via `applies_to`, but `GR-SEC-CMP-00011` does not exist.
+- `GR-SEC-TEC-00007` tries to link to `GR-SEC-CMP-00012` via `applies_to`, but `GR-SEC-CMP-00012` does not exist.
+- `GR-SEC-TEC-00007` tries to link to `GR-SEC-CMP-00013` via `applies_to`, but `GR-SEC-CMP-00013` does not exist.
+- `GR-SEC-TEC-00008` tries to link to `GR-SEC-CON-00003` via `is_a`, but `GR-SEC-CON-00003` does not exist.
+- `GR-SEC-TEC-00008` tries to link to `GR-SEC-CTL-00010` via `mitigates`, but `GR-SEC-CTL-00010` does not exist.
+- `GR-SEC-TEC-00008` tries to link to `GR-SEC-CMP-00010` via `applies_to`, but `GR-SEC-CMP-00010` does not exist.
+- `GR-SEC-TEC-00008` tries to link to `GR-SEC-CMP-00011` via `applies_to`, but `GR-SEC-CMP-00011` does not exist.
+- `GR-SEC-TEC-00008` tries to link to `GR-SEC-CMP-00012` via `applies_to`, but `GR-SEC-CMP-00012` does not exist.
+- `GR-SEC-TEC-00008` tries to link to `GR-SEC-CMP-00013` via `applies_to`, but `GR-SEC-CMP-00013` does not exist.
+- `GR-SEC-TEC-00009` tries to link to `GR-SEC-CON-00003` via `is_a`, but `GR-SEC-CON-00003` does not exist.
+- `GR-SEC-TEC-00009` tries to link to `GR-SEC-CTL-00010` via `mitigates`, but `GR-SEC-CTL-00010` does not exist.
+- `GR-SEC-TEC-00009` tries to link to `GR-SEC-CMP-00010` via `applies_to`, but `GR-SEC-CMP-00010` does not exist.
+- `GR-SEC-TEC-00009` tries to link to `GR-SEC-CMP-00011` via `applies_to`, but `GR-SEC-CMP-00011` does not exist.
+- `GR-SEC-TEC-00009` tries to link to `GR-SEC-CMP-00012` via `applies_to`, but `GR-SEC-CMP-00012` does not exist.
+- `GR-SEC-TEC-00009` tries to link to `GR-SEC-CMP-00013` via `applies_to`, but `GR-SEC-CMP-00013` does not exist.
+- `GR-SEC-TEC-00010` tries to link to `GR-SEC-CON-00003` via `is_a`, but `GR-SEC-CON-00003` does not exist.
+- `GR-SEC-TEC-00010` tries to link to `GR-SEC-CTL-00010` via `mitigates`, but `GR-SEC-CTL-00010` does not exist.
+- `GR-SEC-TEC-00010` tries to link to `GR-SEC-CMP-00010` via `applies_to`, but `GR-SEC-CMP-00010` does not exist.
+- `GR-SEC-TEC-00010` tries to link to `GR-SEC-CMP-00011` via `applies_to`, but `GR-SEC-CMP-00011` does not exist.
+- `GR-SEC-TEC-00010` tries to link to `GR-SEC-CMP-00012` via `applies_to`, but `GR-SEC-CMP-00012` does not exist.
+- `GR-SEC-TEC-00010` tries to link to `GR-SEC-CMP-00013` via `applies_to`, but `GR-SEC-CMP-00013` does not exist.
+- `ATK-MITRE-T1027-001` tries to link to `ATK-MALWARE-PACKER-001` via `related_to`, but `ATK-MALWARE-PACKER-001` does not exist.
+- `ATK-MITRE-T1082-001` tries to link to `TECH-CONCEPT-DISCOVERY-001` via `is_a`, but `TECH-CONCEPT-DISCOVERY-001` does not exist.
+- `ATK-MITRE-T1548-001` tries to link to `ATK-WIN-UAC-BYPASS-001` via `related_to`, but `ATK-WIN-UAC-BYPASS-001` does not exist.
+- `ATK-NET-ARPSPOOF-001` tries to link to `DEF-PREVENT-ARPINSPECT-001` via `mitigated_by`, but `DEF-PREVENT-ARPINSPECT-001` does not exist.
+- `ATK-NET-DNSSPOOF-001` tries to link to `DEF-PREVENT-DNSSEC-001` via `mitigated_by`, but `DEF-PREVENT-DNSSEC-001` does not exist.
+- `ATK-NET-REPLAY-001` tries to link to `DEF-PREVENT-NONCE-001` via `mitigated_by`, but `DEF-PREVENT-NONCE-001` does not exist.
+- `ATK-SERVER-DESER-001` tries to link to `INFRA-APP-WAS-001` via `applies_to`, but `INFRA-APP-WAS-001` does not exist.
+- `ATK-SERVER-IDOR-001` tries to link to `DEF-PREVENT-AUTHZ-001` via `mitigated_by`, but `DEF-PREVENT-AUTHZ-001` does not exist.
+- `ATK-SERVER-LFI-001` tries to link to `INFRA-APP-WAS-001` via `targets`, but `INFRA-APP-WAS-001` does not exist.
+- `ATK-SERVER-RFI-001` tries to link to `INFRA-APP-WAS-001` via `applies_to`, but `INFRA-APP-WAS-001` does not exist.
+- `ATK-WIN-SILVER-TICKET-001` tries to link to `TECH-PROTO-KERBEROS-001` via `related_to`, but `TECH-PROTO-KERBEROS-001` does not exist.
+- `DEF-DETECT-SOAR-001` tries to link to `TOOL-DETECT-SIEM-001` via `related_to`, but `TOOL-DETECT-SIEM-001` does not exist.
+- `DEF-DETECT-XDR-001` tries to link to `TOOL-DETECT-EDR-001` via `related_to`, but `TOOL-DETECT-EDR-001` does not exist.
+- `DEF-DETECT-XDR-001` tries to link to `TOOL-DETECT-SIEM-001` via `related_to`, but `TOOL-DETECT-SIEM-001` does not exist.
+- `DEF-FORENSIC-DISK-001` tries to link to `DEF-FORENSIC-ANALYSIS-001` via `is_a`, but `DEF-FORENSIC-ANALYSIS-001` does not exist.
+- `DEF-FORENSIC-MEMORY-001` tries to link to `DEF-FORENSIC-ANALYSIS-001` via `is_a`, but `DEF-FORENSIC-ANALYSIS-001` does not exist.
+- `DEF-FORENSIC-NETWORK-001` tries to link to `DEF-FORENSIC-ANALYSIS-001` via `is_a`, but `DEF-FORENSIC-ANALYSIS-001` does not exist.
+- `DEF-MONITOR-LOGGING-001` tries to link to `TOOL-DETECT-SIEM-001` via `related_to`, but `TOOL-DETECT-SIEM-001` does not exist.
+- `DEF-PREVENT-CASB-001` tries to link to `DEF-ARCH-ZERO-TRUST-001` via `related_to`, but `DEF-ARCH-ZERO-TRUST-001` does not exist.
+- `DEF-RESPOND-INCIDENT-001` tries to link to `DEF-RESPOND` via `is_a`, but `DEF-RESPOND` does not exist.
+- `DEF-DETECT-ANOMALY-001` tries to link to `DEF-DETECT` via `is_a`, but `DEF-DETECT` does not exist.
+- `DEF-DETECT-IDS-001` tries to link to `DEF-DETECT` via `is_a`, but `DEF-DETECT` does not exist.
+- `DEF-DETECT-LOGGING-001` tries to link to `DEF-DETECT` via `is_a`, but `DEF-DETECT` does not exist.
+- `DEF-DETECT-MONITORING-001` tries to link to `DEF-DETECT` via `is_a`, but `DEF-DETECT` does not exist.
+- `DEF-DETECT-WAF-001` tries to link to `DEF-DETECT` via `is_a`, but `DEF-DETECT` does not exist.
+- `DEF-PREVENT-CORS-001` tries to link to `ATK-WEB-CORS-MISCONFIG-001` via `prevents`, but `ATK-WEB-CORS-MISCONFIG-001` does not exist.
+- `DEF-PREVENT-ENCRYPT-001` tries to link to `ATK-DATA-LEAK-001` via `prevents`, but `ATK-DATA-LEAK-001` does not exist.
+- `DEF-PREVENT-ENCRYPT-001` tries to link to `INFRA-NET-001` via `applies_to`, but `INFRA-NET-001` does not exist.
+- `DEF-PREVENT-HEADERS-001` tries to link to `ATK-WEB-MIME-SNIFF-001` via `prevents`, but `ATK-WEB-MIME-SNIFF-001` does not exist.
+- `DEF-PREVENT-HTTPS-001` tries to link to `INFRA-NET-001` via `applies_to`, but `INFRA-NET-001` does not exist.
+- `DEF-PREVENT-SANDBOX-001` tries to link to `ATK-EXEC-RCE-001` via `prevents`, but `ATK-EXEC-RCE-001` does not exist.
+- `DEF-PREVENT-SANDBOX-001` tries to link to `ATK-PRIV-ESCAPE-001` via `prevents`, but `ATK-PRIV-ESCAPE-001` does not exist.
+- `DEF-RESPOND-BLOCK-001` tries to link to `DEF-RESPOND` via `is_a`, but `DEF-RESPOND` does not exist.
+- `DEF-RESPOND-QUARANTINE-001` tries to link to `DEF-RESPOND` via `is_a`, but `DEF-RESPOND` does not exist.
+- `TOOL-AUDIT-NIKTO-001` tries to link to `TOOL-AUDIT` via `is_a`, but `TOOL-AUDIT` does not exist.
+- `TOOL-AUDIT-NMAP-001` tries to link to `TOOL-AUDIT` via `is_a`, but `TOOL-AUDIT` does not exist.
+- `TOOL-AUDIT-WIRESHARK-001` tries to link to `TOOL-AUDIT` via `is_a`, but `TOOL-AUDIT` does not exist.
+- `TOOL-DEFENSE-MODSEC-001` tries to link to `TOOL-DEFENSE` via `is_a`, but `TOOL-DEFENSE` does not exist.
+- `TOOL-OFFENSE-BURP-001` tries to link to `TOOL-OFFENSE` via `is_a`, but `TOOL-OFFENSE` does not exist.
+- `TOOL-OFFENSE-METASPLOIT-001` tries to link to `TOOL-OFFENSE` via `is_a`, but `TOOL-OFFENSE` does not exist.
+- `TOOL-OFFENSE-SQLMAP-001` tries to link to `TOOL-OFFENSE` via `is_a`, but `TOOL-OFFENSE` does not exist.
+- `TOOL-OFFENSE-ZAP-001` tries to link to `TOOL-OFFENSE` via `is_a`, but `TOOL-OFFENSE` does not exist.
+- `VUL-AUTH-PASSWORD-001` tries to link to `DEF-CRYPTO-ENCRYPTION-001` via `related_to`, but `DEF-CRYPTO-ENCRYPTION-001` does not exist.
+- `VUL-AUTH-SESSION-001` tries to link to `웹 애플리케이션` via `applies_to`, but `웹 애플리케이션` does not exist.
+- `VUL-AUTH-SESSION-001` tries to link to `인증 시스템` via `applies_to`, but `인증 시스템` does not exist.
+- `VUL-AUTH-SESSION-001` tries to link to `세션 기반 상태 관리` via `applies_to`, but `세션 기반 상태 관리` does not exist.
+- `VUL-AUTH-SESSION-001` tries to link to `쿠키 기반 인증` via `applies_to`, but `쿠키 기반 인증` does not exist.
+- `VUL-COMPONENT-VULN-001` tries to link to `오픈소스 라이브러리` via `applies_to`, but `오픈소스 라이브러리` does not exist.
+- `VUL-COMPONENT-VULN-001` tries to link to `서드파티 프레임워크` via `applies_to`, but `서드파티 프레임워크` does not exist.
+- `VUL-COMPONENT-VULN-001` tries to link to `패키지 매니저 의존성(npm, pip, Maven, NuGet)` via `applies_to`, but `패키지 매니저 의존성(npm, pip, Maven, NuGet)` does not exist.
+- `VUL-COMPONENT-VULN-001` tries to link to `컨테이너 베이스 이미지` via `applies_to`, but `컨테이너 베이스 이미지` does not exist.
+- `VUL-COMPONENT-VULN-001` tries to link to `운영체제 패키지` via `applies_to`, but `운영체제 패키지` does not exist.
+- `VUL-COMPONENT-VULN-001` tries to link to `상용 소프트웨어 컴포넌트` via `applies_to`, but `상용 소프트웨어 컴포넌트` does not exist.
+- `VUL-CONFIG-MISCONFIG-001` tries to link to `INFRA-NET-SERVER-001` via `applies_to`, but `INFRA-NET-SERVER-001` does not exist.
+- `VUL-CRYPTO-WEAK-001` tries to link to `암호화 통신(TLS/SSL)` via `applies_to`, but `암호화 통신(TLS/SSL)` does not exist.
+- `VUL-CRYPTO-WEAK-001` tries to link to `데이터 저장 암호화` via `applies_to`, but `데이터 저장 암호화` does not exist.
+- `VUL-CRYPTO-WEAK-001` tries to link to `비밀번호 해싱` via `applies_to`, but `비밀번호 해싱` does not exist.
+- `VUL-CRYPTO-WEAK-001` tries to link to `디지털 서명` via `applies_to`, but `디지털 서명` does not exist.
+- `VUL-CRYPTO-WEAK-001` tries to link to `키 관리 시스템` via `applies_to`, but `키 관리 시스템` does not exist.
+- `VUL-CRYPTO-WEAK-001` tries to link to `인증 토큰 생성` via `applies_to`, but `인증 토큰 생성` does not exist.
+- `VUL-DESER-INSECURE-001` tries to link to `Java 애플리케이션(RMI, JMX, JMS)` via `applies_to`, but `Java 애플리케이션(RMI, JMX, JMS)` does not exist.
+- `VUL-DESER-INSECURE-001` tries to link to `PHP 애플리케이션` via `applies_to`, but `PHP 애플리케이션` does not exist.
+- `VUL-DESER-INSECURE-001` tries to link to `Python 애플리케이션(Pickle)` via `applies_to`, but `Python 애플리케이션(Pickle)` does not exist.
+- `VUL-DESER-INSECURE-001` tries to link to `.NET 애플리케이션(BinaryFormatter)` via `applies_to`, but `.NET 애플리케이션(BinaryFormatter)` does not exist.
+- `VUL-DESER-INSECURE-001` tries to link to `API 엔드포인트` via `applies_to`, but `API 엔드포인트` does not exist.
+- `VUL-DESER-INSECURE-001` tries to link to `메시지 큐 시스템` via `applies_to`, but `메시지 큐 시스템` does not exist.
+- `VUL-LOG-INSUFFICIENT-001` tries to link to `모든 애플리케이션 시스템` via `applies_to`, but `모든 애플리케이션 시스템` does not exist.
+- `VUL-LOG-INSUFFICIENT-001` tries to link to `인증/인가 시스템` via `applies_to`, but `인증/인가 시스템` does not exist.
+- `VUL-LOG-INSUFFICIENT-001` tries to link to `API 게이트웨이` via `applies_to`, but `API 게이트웨이` does not exist.
+- `VUL-LOG-INSUFFICIENT-001` tries to link to `웹 서버` via `applies_to`, but `웹 서버` does not exist.
+- `VUL-LOG-INSUFFICIENT-001` tries to link to `데이터베이스 시스템` via `applies_to`, but `데이터베이스 시스템` does not exist.
+- `VUL-LOG-INSUFFICIENT-001` tries to link to `클라우드 인프라` via `applies_to`, but `클라우드 인프라` does not exist.
+- `VUL-PATH-TRAVERSAL-001` tries to link to `파일 다운로드 기능` via `applies_to`, but `파일 다운로드 기능` does not exist.
+- `VUL-PATH-TRAVERSAL-001` tries to link to `파일 업로드 기능` via `applies_to`, but `파일 업로드 기능` does not exist.
+- `VUL-PATH-TRAVERSAL-001` tries to link to `이미지/리소스 로딩` via `applies_to`, but `이미지/리소스 로딩` does not exist.
+- `VUL-PATH-TRAVERSAL-001` tries to link to `템플릿 렌더링 엔진` via `applies_to`, but `템플릿 렌더링 엔진` does not exist.
+- `VUL-PATH-TRAVERSAL-001` tries to link to `로그 파일 뷰어` via `applies_to`, but `로그 파일 뷰어` does not exist.
+- `VUL-PATH-TRAVERSAL-001` tries to link to `파일 관리 인터페이스` via `applies_to`, but `파일 관리 인터페이스` does not exist.
+- `VUL-XXE-001` tries to link to `XML 파서를 사용하는 애플리케이션` via `applies_to`, but `XML 파서를 사용하는 애플리케이션` does not exist.
+- `VUL-XXE-001` tries to link to `SOAP 웹 서비스` via `applies_to`, but `SOAP 웹 서비스` does not exist.
+- `VUL-XXE-001` tries to link to `SAML 기반 인증 시스템` via `applies_to`, but `SAML 기반 인증 시스템` does not exist.
+- `VUL-XXE-001` tries to link to `XML 파일 업로드 처리` via `applies_to`, but `XML 파일 업로드 처리` does not exist.
+- `VUL-XXE-001` tries to link to `RSS/Atom 피드 처리기` via `applies_to`, but `RSS/Atom 피드 처리기` does not exist.
+- `VUL-XXE-001` tries to link to `SVG 이미지 처리기` via `applies_to`, but `SVG 이미지 처리기` does not exist.
+- `TECH-CONCEPT-AD-SECURITY-001` tries to link to `TECH-PROTO-KERBEROS-001` via `related_to`, but `TECH-PROTO-KERBEROS-001` does not exist.
+- `TECH-CONCEPT-AD-SECURITY-001` tries to link to `TECH-PROTO-LDAP-001` via `related_to`, but `TECH-PROTO-LDAP-001` does not exist.
+- `TECH-CONCEPT-APPLICATION-001` tries to link to `INFRA-APP-WAS-001` via `abstracts`, but `INFRA-APP-WAS-001` does not exist.
+- `TECH-CONCEPT-COMPLIANCE-001` tries to link to `DEF-*` via `provides_guidance_for`, but `DEF-*` does not exist.
+- `TECH-CONCEPT-CTI-001` tries to link to `DEF-INTEL-THREAT-001` via `related_to`, but `DEF-INTEL-THREAT-001` does not exist.
+- `TECH-CONCEPT-MIDDLEWARE-001` tries to link to `INFRA-APP-WAS-001` via `abstracts`, but `INFRA-APP-WAS-001` does not exist.
+- `TECH-CONCEPT-SERVER-001` tries to link to `INFRA-APP-WAS-001` via `abstracts`, but `INFRA-APP-WAS-001` does not exist.
+- `TECH-FORMAT-JWT-001` tries to link to `ATK-AUTH-JWTATTACK-001` via `targeted_by`, but `ATK-AUTH-JWTATTACK-001` does not exist.
+- `TECH-PROTO-OAUTH-001` tries to link to `TECH-CONCEPT-AUTH-001` via `is_a`, but `TECH-CONCEPT-AUTH-001` does not exist.
+- `TECH-PROTO-OAUTH-001` tries to link to `DEF-AUTH-JWT-001` via `related_to`, but `DEF-AUTH-JWT-001` does not exist.
+- `TECH-PROTO-OIDC-001` tries to link to `DEF-AUTH-JWT-001` via `related_to`, but `DEF-AUTH-JWT-001` does not exist.
+- `TECH-PROTO-SAML-001` tries to link to `TECH-CONCEPT-AUTH-001` via `is_a`, but `TECH-CONCEPT-AUTH-001` does not exist.
+- `TECH-PROTOCOL-HTTPS-001` tries to link to `ATK-NETWORK-SNIFF-001` via `prevents`, but `ATK-NETWORK-SNIFF-001` does not exist.
+- `TECH-PROTOCOL-OAUTH-001` tries to link to `ATK-AUTH-OAUTH-001` via `targeted_by`, but `ATK-AUTH-OAUTH-001` does not exist.
+- `TECH-PROTOCOL-SAML-001` tries to link to `ATK-AUTH-SAMLATTACK-001` via `targeted_by`, but `ATK-AUTH-SAMLATTACK-001` does not exist.
+- `TOOL-AD-CERTIPY-001` tries to link to `ATK-WIN-ADCS-001` via `related_to`, but `ATK-WIN-ADCS-001` does not exist.
+- `TOOL-FORENSIC-VOLATILITY-001` tries to link to `TOOL-FORENSIC-001` via `is_a`, but `TOOL-FORENSIC-001` does not exist.
+- `TOOL-PENTEST-CRACKMAPEXEC-001` tries to link to `TOOL-PENTEST-001` via `is_a`, but `TOOL-PENTEST-001` does not exist.
+- `TOOL-PENTEST-METASPLOIT-001` tries to link to `ATK-EXPLOIT-001` via `related_to`, but `ATK-EXPLOIT-001` does not exist.
+- `TOOL-PENTEST-METASPLOIT-001` tries to link to `TOOL-PENTEST-COBALT-STRIKE-001` via `related_to`, but `TOOL-PENTEST-COBALT-STRIKE-001` does not exist.
+- `TOOL-PENTEST-NMAP-001` tries to link to `TECH-CONCEPT-RECON-001` via `related_to`, but `TECH-CONCEPT-RECON-001` does not exist.
+- `TOOL-PENTEST-NMAP-001` tries to link to `TOOL-PENTEST-MASSCAN-001` via `related_to`, but `TOOL-PENTEST-MASSCAN-001` does not exist.
+- `TOOL-PENTEST-RUBEUS-001` tries to link to `TOOL-PENTEST-001` via `is_a`, but `TOOL-PENTEST-001` does not exist.
+- `TOOL-SCAN-BURP-001` tries to link to `ATK-WEB-XSS-001` via `related_to`, but `ATK-WEB-XSS-001` does not exist.
+- `TOOL-SCAN-NESSUS-001` tries to link to `TOOL-SCAN-QUALYS-001` via `related_to`, but `TOOL-SCAN-QUALYS-001` does not exist.
+- `TOOL-SCAN-NMAP-001` tries to link to `TOOL-SCAN-MASSCAN-001` via `related_to`, but `TOOL-SCAN-MASSCAN-001` does not exist.
+- `TOOL-SCAN-WIRESHARK-001` tries to link to `TOOL-SCAN-TCPDUMP-001` via `related_to`, but `TOOL-SCAN-TCPDUMP-001` does not exist.
+- `TOOL-WIRELESS-AIRCRACK-001` tries to link to `ATK-WIRELESS-DEAUTH-001` via `related_to`, but `ATK-WIRELESS-DEAUTH-001` does not exist.
+- `TOOL-WIRELESS-AIRCRACK-001` tries to link to `ATK-WIRELESS-EVIL-TWIN-001` via `related_to`, but `ATK-WIRELESS-EVIL-TWIN-001` does not exist.
+- `TOOL-WIRELESS-WIFITE-001` tries to link to `ATK-WIRELESS-001` via `related_to`, but `ATK-WIRELESS-001` does not exist.
+- `VUL-CONFIG-MISCONFIGURATION-001` tries to link to `VUL-001` via `is_a`, but `VUL-001` does not exist.
+- `VUL-CONFIG-MISCONFIGURATION-001` tries to link to `VUL-AUTH-DEFAULT-CREDS-001` via `related_to`, but `VUL-AUTH-DEFAULT-CREDS-001` does not exist.
+- `VUL-CONFIG-MISCONFIGURATION-001` tries to link to `TECH-CONCEPT-HARDENING-001` via `related_to`, but `TECH-CONCEPT-HARDENING-001` does not exist.
+- `VUL-WEB-CSRF-001` tries to link to `VUL-WEB-SESSION-001` via `related_to`, but `VUL-WEB-SESSION-001` does not exist.
+- `VUL-WEB-DESERIALIZATION-001` tries to link to `ATK-WEB-RCE-001` via `related_to`, but `ATK-WEB-RCE-001` does not exist.
+- `VUL-WEB-DESERIALIZATION-001` tries to link to `VUL-WEB-INJECTION-001` via `related_to`, but `VUL-WEB-INJECTION-001` does not exist.
+- `VUL-WEB-IDOR-001` tries to link to `VUL-WEB-BROKEN-AUTH-001` via `related_to`, but `VUL-WEB-BROKEN-AUTH-001` does not exist.
+- `VUL-WEB-LFI-001` tries to link to `VUL-WEB-RFI-001` via `related_to`, but `VUL-WEB-RFI-001` does not exist.
+- `VUL-WEB-LFI-001` tries to link to `ATK-WEB-FILE-001` via `related_to`, but `ATK-WEB-FILE-001` does not exist.
+- `VUL-WEB-RCE-001` tries to link to `VUL-CRITICAL-001` via `is_a`, but `VUL-CRITICAL-001` does not exist.
+- `VUL-WEB-RCE-001` tries to link to `VUL-WEB-COMMAND-INJECTION-001` via `related_to`, but `VUL-WEB-COMMAND-INJECTION-001` does not exist.
+- `VUL-WEB-SQLI-001` tries to link to `ATK-WEB-INJECTION-001` via `related_to`, but `ATK-WEB-INJECTION-001` does not exist.
+- `VUL-WEB-SSTI-001` tries to link to `VUL-WEB-INJECTION-001` via `related_to`, but `VUL-WEB-INJECTION-001` does not exist.
+- `VUL-WEB-SSTI-001` tries to link to `ATK-WEB-RCE-001` via `related_to`, but `ATK-WEB-RCE-001` does not exist.
+- `VUL-WEB-XSS-001` tries to link to `ATK-WEB-CLIENT-001` via `related_to`, but `ATK-WEB-CLIENT-001` does not exist.
+- `VUL-WEB-XXE-001` tries to link to `ATK-WEB-INJECTION-001` via `related_to`, but `ATK-WEB-INJECTION-001` does not exist.
